@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Genitive Lab — Russian Genitive Case Trainer</title>
+    <meta name="description" content="Master Russian genitive case through interactive drag-and-drop bucket sorting.">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🇷🇺</text></svg>">
+  </head>
+  <body>
+    <div id="app" class="app-shell">
+      <!-- Unified Global Nav (Sidebar on Desktop / Tab Bar on Mobile styled via CSS) -->
+      <nav class="global-nav">
+        <div class="nav-brand">🇷🇺 Genitive Lab</div>
+        <ul class="nav-links">
+          <li><a class="nav-item nav-item--active" data-page="dashboard" href="#/">
+            <span class="nav-icon">🏠</span><span class="nav-label">Dashboard</span>
+          </a></li>
+          <li><a class="nav-item" data-page="words" href="#/words">
+            <span class="nav-icon">📚</span><span class="nav-label">Words</span>
+          </a></li>
+          <li><a class="nav-item" data-page="reference" href="#/reference">
+            <span class="nav-icon">📖</span><span class="nav-label">Reference</span>
+          </a></li>
+          <li><a class="nav-item" data-page="settings" href="#/settings">
+            <span class="nav-icon">⚙️</span><span class="nav-label">Settings</span>
+          </a></li>
+        </ul>
+      </nav>
+
+      <!-- Main Content Area -->
+      <main class="view-container" id="main-content">
+        <!-- Pages render here dynamically -->
+      </main>
+
+      <!-- Sort Screen (Full-screen overlay) -->
+      <div class="sort-screen" id="sort-screen"></div>
+
+      <!-- Modal Overlay (for indeclinable words) -->
+      <div class="modal-overlay" id="modal-overlay"></div>
+
+      <!-- Toast Container -->
+      <div class="toast-container" id="toast-container"></div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
